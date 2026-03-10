@@ -11,8 +11,8 @@
 <circle cx="60" cy="60" r="40" fill="url(#sabtiGradient)" />
 
 <!-- S Letter -->
-<text x="60" y="70"
-font-size="42"
+<text x="60" y="80"
+font-size="60"
 font-family="Segoe UI, Arial, sans-serif"
 text-anchor="middle"
 fill="white"
@@ -31,7 +31,7 @@ SABTI
 
 <!-- Tagline -->
 <text x="120" y="95"
-font-size="14"
+font-size="16"
 font-family="Segoe UI, Arial, sans-serif"
 fill="#22C55E">
 Simple and Better Technology Innovations

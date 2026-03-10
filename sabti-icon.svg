@@ -7,11 +7,11 @@
 </linearGradient>
 </defs>
 
-<circle cx="50" cy="50" r="45" fill="url(#g)" />
+<circle cx="60" cy="60" r="45" fill="url(#g)" />
 
-<text x="50" y="60"
+<text x="60" y="90"
 text-anchor="middle"
-font-size="48"
+font-size="90"
 font-family="Segoe UI, Arial"
 fill="white"
 font-weight="bold">

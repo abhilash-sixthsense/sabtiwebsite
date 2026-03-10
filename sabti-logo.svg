@@ -1,0 +1,40 @@
+<svg width="420" height="120" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+<linearGradient id="sabtiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#2563EB"/>
+<stop offset="100%" stop-color="#22C55E"/>
+</linearGradient>
+</defs>
+
+<!-- Icon -->
+<circle cx="60" cy="60" r="40" fill="url(#sabtiGradient)" />
+
+<!-- S Letter -->
+<text x="60" y="70"
+font-size="42"
+font-family="Segoe UI, Arial, sans-serif"
+text-anchor="middle"
+fill="white"
+font-weight="bold">
+S
+</text>
+
+<!-- SABTI Text -->
+<text x="120" y="70"
+font-size="38"
+font-family="Segoe UI, Arial, sans-serif"
+fill="#2563EB"
+font-weight="700">
+SABTI
+</text>
+
+<!-- Tagline -->
+<text x="120" y="95"
+font-size="14"
+font-family="Segoe UI, Arial, sans-serif"
+fill="#22C55E">
+Simple and Better Technology Innovations
+</text>
+
+</svg>

@@ -1,158 +1,287 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SABTI | Coming Soon</title>
-    <link rel="icon" href="sabti-icon.svg" type="image/svg+xml" />
+
+    <!-- SEO -->
+    <title>Simple & Better Technology Innovations | AI & Software Solutions</title>
+    <meta name="description"
+        content="Simple & Better Technology Innovations (OPC) Pvt Ltd builds AI-powered platforms, enterprise software, and intelligent recruitment solutions like HireApt.in.">
+    <meta name="keywords"
+        content="AI solutions, recruitment platform, software development, SaaS, HireApt, IT consulting India">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Simple & Better Technology Innovations">
+    <meta property="og:description"
+        content="Innovative AI and enterprise solutions including HireApt.in recruitment platform.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo_small.png">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", Arial, sans-serif;
-        }
-
-        body {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #2563eb, #22c55e);
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 800px;
-            background: white;
-            color: #333;
-            padding: 50px 40px;
-            border-radius: 12px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-        }
-
-        .logo img {
-            max-width: 700px;
-            width: 100%;
-            height: auto;
-        }
-
-        .tagline {
-            font-size: 14px;
-            margin-top: 5px;
-            color: #22c55e;
-            font-weight: 500;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 15px;
-            color: #111;
-        }
-
-        p {
-            font-size: 17px;
-            margin-bottom: 35px;
-            color: #555;
-        }
-
-        .contact {
-            margin-top: 30px;
-            font-size: 16px;
-        }
-
-        .contact a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 600;
-            word-break: break-all;
-        }
-
-        .contact a:hover {
-            color: #22c55e;
-            text-decoration: underline;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 13px;
-            color: #777;
-        }
-
-
-        /* -------- MOBILE RESPONSIVE -------- */
-
-        @media (max-width: 768px) {
-
-            .container {
-                padding: 35px 25px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            p {
-                font-size: 16px;
-            }
-
-        }
-
-        @media (max-width: 480px) {
-
-            .container {
-                padding: 25px 18px;
-                border-radius: 10px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            p {
-                font-size: 15px;
-            }
-
-            .logo img {
-                max-width: 370px;
-            }
-
-            .contact {
-                font-size: 14px;
-            }
-
-            .footer {
-                font-size: 12px;
-            }
+        html {
+            scroll-behavior: smooth;
         }
     </style>
+
+
 </head>
 
-<body>
-    <div class="container">
-        <div class="logo"><img src="sabti-logo.svg"  alt="Simple And Better Tech Innovations"></div>
-        <div class="tagline">
-            <!-- Simple and Better Technology Innovations Pvt Ltd OPC -->
+<body class="bg-slate-50 text-gray-800">
+
+
+    <!-- Header / Navbar -->
+    <header class="fixed w-full bg-blue-800 text-white shadow z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="bg-white/90 backdrop-blur p-1 rounded">
+                    <img src="logo.png" alt="SABTI Logo" class="h-8 w-auto">
+                </span>
+                <span class="font-semibold text-lg">SABTI</span>
+            </div>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-blue-200">Home</a>
+                <a href="#initiatives" class="hover:text-blue-200">Initiatives</a>
+                <a href="#philosophy" class="hover:text-blue-200">Belief</a>
+                <a href="#activities" class="hover:text-blue-200">Activities</a>
+                <a href="#contact" class="hover:text-blue-200">Contact</a>
+            </nav>
+
+            <button id="menuBtn" class="md:hidden text-white text-2xl">☰</button>
         </div>
 
-        <h1>🚀 Website Coming Soon</h1>
+        <div id="mobileMenu" class="hidden md:hidden bg-blue-700 px-4 pb-4">
+            <a href="#home" class="block py-2">Home</a>
+            <a href="#initiatives" class="block py-2">Initiatives</a>
+            <a href="#philosophy" class="block py-2">Belief</a>
+            <a href="#activities" class="block py-2">Activities</a>
+            <a href="#contact" class="block py-2">Contact</a>
+        </div>
+    </header>
 
-        <p>
-            We are building something amazing and will launch soon.
-        </p>
+    <!-- Hero -->
+    <section id="home"
+        class="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-blue-50 to-blue-100 pt-20">
+        <div class="max-w-6xl mx-auto px-4">
 
-        <div class="contact">
-            <p>📧 Contact us: <a href="mailto:sabti.in@outlook.com">sabti.in@outlook.com</a>
+            <div class="flex justify-center mb-4">
+                <img src="logo_big.png" alt="SABTI Logo" class="h-32 md:h-20 w-auto drop-shadow-sm">
+            </div>
+
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">
+                    Simple & Better Technology Innovations
+                </h1>
+
+                <p class="text-lg md:text-xl text-blue-800 font-medium max-w-2xl mx-auto">
+                    Delivering intelligent software, AI-driven platforms, and scalable enterprise solutions.
+                </p>
+            </div>
+
+            <div class="mt-8 space-y-4 text-left">
+                <p class="text-gray-800 text-base md:text-lg leading-relaxed">
+                    Founded in 2026 by professionals with nearly 25 years of industry experience, we focus on solving
+                    real business problems with practical and effective technology solutions.
+                </p>
+
+                <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                    We use stable, proven open-source technologies to reduce cost and complexity, while ensuring systems
+                    can grow with future needs. Our goal is to deliver solutions that work — not ones that are
+                    unnecessarily complex.
+                </p>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="#initiatives"
+                    class="inline-block px-6 py-3 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-800 transition">
+                    Explore Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Initiatives -->
+    <section id="initiatives" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-700 mb-10">
+                Our Initiatives
+            </h2>
+
+            <div class="grid gap-6 md:grid-cols-3">
+
+                <article class="p-6 bg-blue-100 rounded-xl shadow border">
+                    <h3 class="text-xl font-semibold text-blue-900">
+                        <a href="https://hireapt.in" target="_blank" class="hover:underline">
+                            HireApt.in
+                        </a>
+                    </h3>
+
+                    <p class="text-blue-700 font-medium mb-2">
+                        Intelligent Recruitment Platform
+                    </p>
+
+                    <p>
+                        AI-powered hiring platform for small to medium IT companies,
+                        enabling smarter screening, matching, and hiring decisions.
+                    </p>
+
+                    <a href="https://hireapt.in" target="_blank"
+                        class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                        Visit HireApt →
+                    </a>
+                </article>
+
+                <article class="p-6 bg-blue-50 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold text-blue-800">AI Innovation</h3>
+                    <p>Building real-world AI solutions and automation systems.</p>
+                </article>
+
+                <article class="p-6 bg-blue-50 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold text-blue-800">Enterprise Solutions</h3>
+                    <p>Scalable architecture and digital transformation services.</p>
+                </article>
+
+                <article class="p-6 bg-blue-50 rounded-xl shadow md:col-span-3">
+                    <h3 class="text-xl font-semibold text-blue-800">Training & Development</h3>
+                    <p>Upskilling teams in AI, cloud, and modern software engineering.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Belief -->
+    <section id="philosophy" class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-6">
+                Our Belief
+            </h2>
+
+            <p class="text-lg text-gray-700 mb-8">
+                Technology doesn’t have to be complicated to be powerful.
             </p>
+
+            <div class="grid md:grid-cols-3 gap-6 text-left">
+
+                <div class="p-6 bg-white rounded-xl shadow">
+                    <h3 class="font-semibold text-blue-800 mb-2">Keep It Simple</h3>
+                    <p>We build solutions that are easy to understand, use, and maintain.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-xl shadow">
+                    <h3 class="font-semibold text-blue-800 mb-2">Right Tools</h3>
+                    <p>We use reliable open-source technologies to reduce cost without compromising quality.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-xl shadow">
+                    <h3 class="font-semibold text-blue-800 mb-2">Focus on Outcomes</h3>
+                    <p>We focus on solving real problems and delivering meaningful results.</p>
+                </div>
+
+            </div>
+
         </div>
-        <div class="footer">© 2026 SABTI. All rights reserved.</div>
-    </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="py-16 bg-gradient-to-r from-blue-50 to-blue-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-700 mb-10">
+                Activities
+            </h2>
+
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="p-6 bg-white rounded-xl shadow">
+                    <h3 class="font-semibold text-blue-800">Workshops</h3>
+                    <p>Hands-on sessions on AI, cloud, and development.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-xl shadow">
+                    <h3 class="font-semibold text-blue-800">Consulting</h3>
+                    <p>Guidance on scalable systems and architecture.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-xl shadow">
+                    <h3 class="font-semibold text-blue-800">Product Development</h3>
+                    <p>Building SaaS and enterprise applications.</p>
+                </div>
+
+                <div class="p-6 bg-white rounded-xl shadow">
+                    <h3 class="font-semibold text-blue-800">R&D</h3>
+                    <p>Exploring AI, AR/VR, and automation technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-700 mb-6">
+                Contact Us
+            </h2>
+
+            <p class="text-gray-600 mb-8">
+                Have a question or want to work with us? Reach out directly.
+            </p>
+
+            <div class="mb-8 text-gray-700 space-y-2">
+                <p>WhatsApp: <span class="font-medium">+91 7259892634</span></p>
+                <p>Email: <span class="font-medium">sabti.in@outlook.com</span></p>
+            </div>
+
+            <div class="flex flex-col items-center gap-4">
+                <a href="https://wa.me/917259892634?text=Hello%20I%20am%20interested%20in%20your%20services"
+                    target="_blank"
+                    class="flex items-center gap-2 px-5 py-2.5 bg-green-500 text-white rounded-lg hover:bg-green-600">
+                    Chat on WhatsApp
+                </a>
+
+                <a href="mailto:sabti.in@outlook.com"
+                    class="flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                    Send Email
+                </a>
+            </div>
+
+            <div class="mt-12 border-t pt-8 text-gray-700">
+                <h3 class="text-xl font-semibold text-blue-700 mb-4">Our Address</h3>
+                <p class="leading-relaxed">
+                    <span class="font-semibold text-blue-800">
+                        Simple & Better Technology Innovations (OPC) Pvt Ltd
+                    </span><br>
+                    Panadans, Kochi University<br>
+                    Ernakulam, Kochi, Kerala<br>
+                    India
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p>© <span id="year"></span> Simple & Better Technology Innovations (OPC) Pvt Ltd</p>
+    </footer>
+
+    <script>
+        document.getElementById("menuBtn").onclick = () => {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        };
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+
 </body>
 
 </html>
